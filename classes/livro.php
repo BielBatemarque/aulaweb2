@@ -1,4 +1,5 @@
 <?php
+   
     class Livro{
         public $titulo;
         public $isbn;
@@ -16,5 +17,8 @@
         }
 
     }
-
+    $livro1 = new Livro('10 razões pelas quais js é melhor que php', 5, 100, 2022, 6);
+    $livro2 = new Livro('+10 razões que provam que js é melhor que php', 5 , 60, 2023, 8);
+    $livro3 = new Livro('+20 razões que provam que js é melhor que php', 5 , 60, 2023, 8);
+    $livro4 = new Livro('+30 razões que provam que js é melhor que php', 5 , 60, 2023, 8);
 ?>

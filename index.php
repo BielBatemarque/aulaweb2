@@ -33,13 +33,7 @@
         <body>
     <?php
         $autor = new Autor('gabriel', 'biel@gmail.com', 'www.meulivro.com');
-        $livro1 = new Livro('10 razões pelas quais js é melhor que php', 5, 100, 2022, 6);
-        $livro2 = new Livro('+10 razões que provam que js é melhor que php', 5 , 60, 2023, 8);
-        $livro3 = new Livro('+20 razões que provam que js é melhor que php', 5 , 60, 2023, 8);
-        $livro4 = new Livro('+30 razões que provam que js é melhor que php', 5 , 60, 2023, 8);
-
        $editora = new Editora('rebert richards', '(12) 997247-0537', 'rebertRichards@gmail.com', 'www.editorarebert.com.br');
-
        $arrayLivros = [$livro1, $livro2, $livro3, $livro4];
     ?>
         <div>
@@ -60,7 +54,9 @@
                     <td><p><?php print_r($autor->nome)  ?></p></td>
                     <td><p><?php print_r($editora->nome)  ?></p></td>
                     <
-                    <td><a href="./detalhesLivro.php?id=<?php echo $aux;?>" target="_blank"><img src="./assets/mais.jpg"></a></td>
+                    <td><?php echo "<a href=detalhesLivro.php?id=".$aux.  " target=_blank><img src=./assets/mais.jpg></a></td>"?>
+
+
                 </tr>
                 <?php
                 $aux++;
