@@ -2,10 +2,6 @@
     include_once './classes/autor.php';
     include_once './classes/editora.php';
     include_once './classes/livro.php';
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +9,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Listagem de Livros</title>
+        <link rel="stylesheet" href="./css/styles.css">
     <style>
         h1{
             text-align: center;
@@ -36,7 +33,7 @@
        $editora = new Editora('rebert richards', '(12) 997247-0537', 'rebertRichards@gmail.com', 'www.editorarebert.com.br');
        $arrayLivros = [$livro1, $livro2, $livro3, $livro4];
     ?>
-        <div>
+        <div class="div1">
             <table>
                 <tr>
                     <td><h3>Nome do livro</h3></td>
@@ -45,6 +42,7 @@
                     <td><h3>Detalhes</h3></td>
                 </tr>
 
+                
                 <?php
                 $aux = 0;
                     foreach($arrayLivros as $linha){                
